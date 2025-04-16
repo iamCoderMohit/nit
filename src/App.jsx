@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import SignUp from './auth/SignUp'
 import { ToastContainer } from 'react-toastify'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import SignIn from './auth/SignIn'
 import Layout from './Layout'
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <BrowserRouter>
+      <HashRouter>
 <Layout>
         <Routes>
          
@@ -26,7 +26,7 @@ function App() {
           
         </Routes>
       </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
